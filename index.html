@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#15110f" />
+  <meta name="description" content="Belanja biji kopi dan kopi bubuk siap seduh dari Kopi Keseduh. Pilih karakter kopi favoritmu dan pesan dengan mudah." />
+  <title>Kopi Keseduh — Biji & Bubuk Kopi Pilihan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement"><span>✦</span> BIJI PILIHAN · DIGILING SEGAR · SIAP MENEMANI HARI <span>✦</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Kopi Keseduh home"><span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 19h25v11a9 9 0 0 1-9 9h-7a9 9 0 0 1-9-9V19Z"/><path d="M34 22h3a5 5 0 0 1 0 10h-4M14 13c-2-3 2-4 0-7m9 7c-2-3 2-4 0-7m9 7c-2-3 2-4 0-7"/></svg></span><span class="brand-name">KOPI <b>KESEDUH</b><small>BIJI & BUBUK KOPI PILIHAN</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+    <nav id="mainNav"><a href="#home" class="nav-link active">Beranda</a><a href="#shop" class="nav-link">Belanja Kopi</a><a href="#about" class="nav-link">Cerita Kami</a><a href="#contact" class="nav-link">Kontak</a><a href="#trust-info" class="nav-link">Info Toko</a></nav>
+    <button class="cart-button" id="openCart" aria-label="Buka keranjang"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-5Z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17M7 6c-1-1 1-2 0-3m5 3c-1-1 1-2 0-3m5 3c-1-1 1-2 0-3"/></svg><span class="cart-label">Keranjang</span><span class="cart-count" id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="page active" id="home">
+      <div class="hero">
+        <div class="hero-copy"><p class="eyebrow"><i></i> GOOD COFFEE, MADE SIMPLE</p><h1>Ritual kopi enak,<br>dimulai dari <em>rumah.</em></h1><p class="hero-text">Temukan biji kopi pilihan atau bubuk kopi siap seduh. Rasa istimewa, cara menikmati yang sederhana.</p><div class="hero-actions"><a class="btn btn-light" href="#shop">Belanja sekarang <span>↗</span></a><a class="text-link" href="#about">Kenali Kopi Keseduh <span>→</span></a></div><div class="hero-perks"><span>✓ Biji kopi pilihan</span><span>✓ Opsi biji & bubuk</span><span>✓ Pesan praktis</span></div></div>
+        <div class="hero-visual"><div class="hero-image"></div><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><div class="hero-stamp"><span>FRESH</span><b>BREW</b><span>EVERYDAY</span></div><div class="hero-caption"><span>YOUR DAILY COFFEE COMPANION</span><span>EST. 2024 · INDONESIA</span></div></div>
+      </div>
+      <div class="trust-strip"><div><b>01</b><span>Pilihan biji kopi</span></div><div><b>02</b><span>Bubuk siap seduh</span></div><div><b>03</b><span>Detail produk jelas</span></div><div><b>04</b><span>Order mudah via WhatsApp</span></div></div>
+      <section class="section featured"><div class="section-heading"><div><p class="eyebrow">PILIHAN FAVORIT</p><h2>Mulai dari seduhan <em>favoritmu.</em></h2><p class="section-intro">Biji utuh untuk kamu yang suka menggiling sendiri, atau bubuk praktis yang siap diseduh.</p></div><a class="text-link" href="#shop">Lihat semua kopi →</a></div><div class="product-grid" id="featuredProducts"></div></section>
+      <section class="brew-guide"><div><p class="eyebrow">PILIH CARA NIKMATIMU</p><h2>Biji utuh atau<br><em>bubuk siap seduh?</em></h2><p>Keduanya berawal dari kopi pilihan. Tinggal sesuaikan dengan ritual ngopimu.</p></div><div class="guide-cards"><article><span class="guide-icon">✳</span><h3>Biji Kopi</h3><p>Untuk kamu yang ingin menggiling sendiri dan mengatur tingkat kehalusan sesuai alat seduh.</p><a href="#shop" data-filter-link="beans">Belanja biji kopi ↗</a></article><article><span class="guide-icon">⌁</span><h3>Kopi Bubuk</h3><p>Sudah digiling dan praktis. Pilih, seduh, lalu nikmati kapan pun kamu mau.</p><a href="#shop" data-filter-link="ground">Belanja kopi bubuk ↗</a></article></div></section>
+      <section class="quote-band"><p class="eyebrow">A LITTLE PAUSE, A BETTER DAY</p><h2>“Seduh yang baik.<br>Nikmati setiap jeda.”</h2><span>— KOPI KESEDUH</span></section>
+    </section>
+
+    <section class="page" id="shop"><div class="page-banner"><p class="eyebrow">KATALOG KOPI KESEDUH</p><h1>Temukan teman <em>seduhmu.</em></h1><p>Biji kopi utuh dan kopi bubuk siap seduh, pilih sesuai seleramu.</p></div><div class="shop-controls"><div class="filter-tabs" role="group" aria-label="Filter jenis kopi"><button class="filter-tab active" data-filter="all">Semua kopi</button><button class="filter-tab" data-filter="beans">Biji kopi</button><button class="filter-tab" data-filter="ground">Kopi bubuk</button></div><div class="shop-tools"><label class="search-box"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="searchProducts" type="search" placeholder="Cari kopi favorit..." aria-label="Cari produk"></label><select id="sortProducts" aria-label="Urutkan produk"><option value="default">Rekomendasi</option><option value="low">Harga terendah</option><option value="high">Harga tertinggi</option></select></div></div><div class="shop-toolbar"><span class="result-count" id="resultCount">6 produk</span><span class="shipping-note">✦ Pilih jenis gilingan sebelum checkout bila tersedia</span></div><div class="product-grid shop-grid" id="allProducts"></div></section>
+
+    <section class="page" id="about"><div class="about-hero"><div class="about-photo"></div><div class="about-copy"><p class="eyebrow">CERITA KAMI · KOPI KESEDUH</p><h1>Kopi pilihan,<br>untuk jeda <em>berarti.</em></h1><p>Kopi Keseduh ingin membuat kopi berkualitas terasa dekat dan mudah dinikmati. Karena pengalaman minum kopi yang menyenangkan bisa dimulai dari rumah.</p><p>Kami menghadirkan pilihan biji kopi dan kopi bubuk siap seduh, supaya kamu bisa memilih cara menikmati kopi yang paling pas dengan keseharianmu.</p><a class="btn btn-light" href="#shop">Pilih kopimu ↗</a></div></div><div class="values"><div><span>01</span><h3>Pilihan dengan karakter</h3><p>Kenali karakter rasa kopi dan temukan yang paling cocok untukmu.</p></div><div><span>02</span><h3>Praktis sesuai kebutuhan</h3><p>Pilih biji utuh atau bubuk kopi yang siap diseduh.</p></div><div><span>03</span><h3>Teman setiap hari</h3><p>Kopi untuk menemani pagi, waktu kerja, dan waktu santaimu.</p></div></div></section>
+
+    <section class="page" id="contact"><div class="page-banner contact-banner"><p class="eyebrow">KAMI SIAP MEMBANTU</p><h1>Ada yang ingin <em>ditanyakan?</em></h1><p>Tanya tentang pilihan biji, tingkat gilingan, produk, atau pesananmu.</p></div><div class="contact-layout"><div class="contact-card"><p class="eyebrow">HUBUNGI KAMI</p><h2>Mari ngobrol soal kopi.</h2><p>Tim Kopi Keseduh siap membantu kamu menemukan kopi yang tepat.</p><a class="contact-line" id="contactWa" href="https://wa.me/6289669085603" target="_blank" rel="noreferrer"><span>WhatsApp</span><b>Chat dengan kami ↗</b></a><a class="contact-line" href="https://instagram.com/kopikeseduh" target="_blank" rel="noreferrer"><span>Instagram</span><b>@kopikeseduh ↗</b></a>
+            <div class="contact-line"><span>Email</span><b>Tambahkan email toko</b></div>
+            <div class="contact-line"><span>Kota</span><b>Tambahkan kota toko</b></div><div class="contact-line"><span>Jam layanan</span><b>Senin–Sabtu · 09.00–17.00</b></div></div><form class="contact-form" id="contactForm"><p class="eyebrow">KIRIM PESAN</p><label>Nama<input required name="name" placeholder="Nama kamu"></label><label>Email<input required type="email" name="email" placeholder="nama@email.com"></label><label>Pesan<textarea required name="message" rows="4" placeholder="Tulis pesanmu di sini..."></textarea></label><button class="btn btn-light" type="submit">Kirim via WhatsApp ↗</button><small>Pesan akan diteruskan ke WhatsApp Kopi Keseduh.</small></form></div></section>
+
+    <!-- Fitur tambahan: ulasan, pembayaran, kebijakan, dan legalitas toko -->
+    <section class="page" id="trust-info">
+      <div class="page-banner"><p class="eyebrow">INFORMASI TOKO · KOPI KESEDUH</p><h1>Belanja dengan lebih <em>nyaman.</em></h1><p>Informasi produk, kebijakan, pembayaran, dan pengalaman pelanggan.</p></div>
+      <section class="section trust-extra">
+        <div class="section-heading"><div><p class="eyebrow">PENGALAMAN PELANGGAN</p><h2>Ulasan <em>pembeli.</em></h2><p class="section-intro">Bagikan pengalaman setelah pesanan diterima. Ulasan yang dikirim dari perangkat ini tersimpan di browser ini.</p></div></div>
+        <div class="review-layout">
+          <div id="reviewList" class="review-list"><p class="review-empty">Belum ada ulasan. Jadilah pembeli pertama yang berbagi pengalaman.</p></div>
+          <form id="reviewForm" class="contact-form review-form">
+            <p class="eyebrow">TULIS ULASAN</p>
+            <label>Nama<input name="reviewName" required maxlength="50" placeholder="Nama kamu"></label>
+            <label>Produk<input name="reviewProduct" required maxlength="80" placeholder="Nama produk yang dibeli"></label>
+            <label>Rating<select name="reviewRating" required><option value="5">★★★★★ — Sangat puas</option><option value="4">★★★★☆ — Puas</option><option value="3">★★★☆☆ — Cukup</option><option value="2">★★☆☆☆ — Kurang</option><option value="1">★☆☆☆☆ — Tidak puas</option></select></label>
+            <label>Ulasan<textarea name="reviewText" rows="4" required maxlength="500" placeholder="Ceritakan pengalamanmu..."></textarea></label>
+            <button class="btn btn-light" type="submit">Kirim ulasan</button>
+          </form>
+        </div>
+      </section>
+      <section class="section policy-section">
+        <div class="section-heading"><div><p class="eyebrow">INFORMASI PENTING</p><h2>Kebijakan <em>toko.</em></h2></div></div>
+        <div class="policy-grid">
+          <article><span>01</span><h3>Pengiriman</h3><p>Ongkos kirim, jasa ekspedisi, dan estimasi tiba dikonfirmasi melalui WhatsApp sebelum pesanan diproses. Pastikan alamat dan nomor penerima benar.</p></article>
+          <article><span>02</span><h3>Retur & komplain</h3><p>Hubungi kami maksimal 2 × 24 jam setelah paket diterima jika barang rusak atau tidak sesuai. Sertakan nomor pesanan serta foto/video kemasan dan produk. Penggantian atau solusi dikonfirmasi oleh toko.</p></article>
+          <article><span>03</span><h3>Privasi</h3><p>Data nama, kontak, dan alamat digunakan untuk komunikasi serta pemrosesan pesanan. Jangan kirim kata sandi, PIN, atau OTP kepada siapa pun. Formulir ulasan disimpan lokal pada browser yang digunakan.</p></article>
+          <article><span>04</span><h3>Pembayaran</h3><p>Metode pembayaran dan rekening resmi wajib dikonfirmasi langsung melalui WhatsApp toko sebelum transfer. Jangan melakukan pembayaran ke rekening yang tidak terverifikasi.</p></article>
+        </div>
+      </section>
+      <section class="section payment-section">
+        <div class="section-heading"><div><p class="eyebrow">TRANSAKSI</p><h2>Pembayaran <em>lebih aman.</em></h2><p class="section-intro">Saat ini checkout diteruskan ke WhatsApp untuk konfirmasi pesanan, stok, ongkir, dan metode pembayaran. Website ini belum terhubung ke payment gateway atau pemrosesan kartu otomatis.</p></div></div>
+        <div class="payment-note"><b>Periksa sebelum membayar</b><p>Pastikan nama toko, total tagihan, dan nama pemilik rekening sudah cocok melalui kontak resmi. Simpan bukti transaksi dan jangan pernah membagikan PIN/OTP.</p></div>
+      </section>
+      <section class="section legal-section">
+        <div class="section-heading"><div><p class="eyebrow">IDENTITAS USAHA</p><h2>Legalitas <em>usaha.</em></h2><p class="section-intro">Nomor NIB dan dokumen legalitas belum dicantumkan pada website ini. Tambahkan nomor dan nama badan/usaha yang sesuai dokumen resmi sebelum dipublikasikan; jangan gunakan nomor contoh.</p></div></div>
+        <div class="legal-note"><b>Status informasi:</b> Menunggu data legalitas resmi dari pemilik Kopi Keseduh.</div>
+      </section>
+    </section>
+  </main>
+
+  <footer><div class="footer-top"><a class="brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 19h25v11a9 9 0 0 1-9 9h-7a9 9 0 0 1-9-9V19Z"/><path d="M34 22h3a5 5 0 0 1 0 10h-4M14 13c-2-3 2-4 0-7m9 7c-2-3 2-4 0-7m9 7c-2-3 2-4 0-7"/></svg></span><span class="brand-name">KOPI <b>KESEDUH</b><small>BIJI & BUBUK KOPI PILIHAN</small></span></a><p>Good coffee, made simple.<br>Temukan cara seduh favoritmu.</p><div class="footer-nav"><a href="#shop">Belanja</a><a href="#about">Cerita kami</a><a href="#contact">Kontak</a></div></div><div class="footer-bottom"><span>© 2026 Kopi Keseduh. All rights reserved.</span><span>BREW A BETTER EVERYDAY.</span></div></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Keranjang belanja"><div class="drawer-head"><div><p class="eyebrow">PILIHAN KOPIMU</p><h2>Keranjang <em>belanja.</em></h2></div><button class="icon-button" id="closeCart" aria-label="Tutup keranjang">×</button></div><div class="cart-items" id="cartItems"><div class="empty-cart">Belum ada kopi di sini.<br><a href="#shop">Yuk, pilih kopi favoritmu →</a></div></div><div class="cart-footer"><div class="subtotal"><span>Subtotal</span><b id="cartSubtotal">Rp0</b></div><button class="btn btn-light checkout-btn" id="checkoutBtn">Lanjut pesan via WhatsApp ↗</button><small>Ongkos kirim dan detail pesanan dikonfirmasi melalui WhatsApp.</small></div></aside>
+  <div class="modal-wrap" id="productModal"><div class="modal-card"><button class="icon-button modal-close" id="closeModal" aria-label="Tutup">×</button><div id="modalContent"></div></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
